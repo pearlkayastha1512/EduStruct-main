@@ -54,7 +54,7 @@ console.log(selectedSchool);
 const saveChanges = async () => {
   try {
     const res = await axios.put(
-      `http://localhost:8000/api/school/update/${selectedSchool._id}`,
+      `${import.meta.env.VITE_API_URL}/api/school/update/${selectedSchool._id}`,
       selectedSchool,
       {
         headers: { "Content-Type": "application/json" },
@@ -77,7 +77,7 @@ const saveChanges = async () => {
 
   const deleteSchool = async () => {
     try {
-      const res = await axios.delete(`http://localhost:8000/api/school/delete/${selectedSchool._id}`);
+      const res = await axios.delete(`${import.meta.env.VITE_API_URL}/api/school/delete/${selectedSchool._id}`);
   
       if (res.data.success) {
         // Remove the deleted school from Redux state directly

@@ -9,7 +9,7 @@ const getAllReviews = () => {
     useEffect(()=>{
         const fetchAllReviews = async () => {
             try {
-                const res = await axios.get(`http://localhost:8000/api/review/all`,{withCredentials:true});
+                const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/review/all`,{withCredentials:true});
                 if(res.data.success){
                     dispatch(setAllReviews(res.data.reviews));
                 }

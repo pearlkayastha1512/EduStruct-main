@@ -9,7 +9,7 @@ const getReviewBySchool = (schoolId) => {
     useEffect(()=>{
         const fetchReviewBySchool = async () => {
             try {
-                const res = await axios.get(`http://localhost:8000/api/review/${schoolId}`,{withCredentials:true});
+                const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/review/${schoolId}`,{withCredentials:true});
                 if(res.data.success){
                     dispatch(setReviews(res.data.reviews));
                 }

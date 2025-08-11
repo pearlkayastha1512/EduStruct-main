@@ -68,7 +68,7 @@ const ManageUsers = () => {
 
   const handleDelete = async () => {
     try {
-    const res = await axios.delete(`http://localhost:8000/api/user/deleteUser/${userToDelete._id}`);
+    const res = await axios.delete(`${import.meta.env.VITE_API_URL}/api/user/deleteUser/${userToDelete._id}`);
     if(res.data.success){
         const updatedUsers = allUsers.filter(user => user._id !== userToDelete._id);    
       dispatch(setAllUsers(updatedUsers));

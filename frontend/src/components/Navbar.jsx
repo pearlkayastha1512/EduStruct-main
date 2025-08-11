@@ -1494,9 +1494,10 @@ const Navbar = () => {
   // Logout handler
   const logoutHandler = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/api/user/logout", {
-        withCredentials: true,
-      });
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/user/logout`, {
+  withCredentials: true,
+});
+
       if (res.data.success) {
         dispatch(setUser(null));
         toast.success("Logout successful");

@@ -172,10 +172,15 @@ import { toast } from 'react-toastify';
    // console.log('School data to submit:', school);
     try {
         dispatch(setLoading(true));
-        const res = await axios.post('http://localhost:8000/api/school/create', school, {
-          headers: { 'Content-Type': "application/json" },
-          withCredentials: true,
-        });
+        const res = await axios.post(
+  `${import.meta.env.VITE_API_URL}/api/school/create`,
+  school,
+  {
+    headers: { 'Content-Type': "application/json" },
+    withCredentials: true,
+  }
+);
+
         console.log(res);
         if (res.data.success) {
             dispatch(setSchools(res.data.school));

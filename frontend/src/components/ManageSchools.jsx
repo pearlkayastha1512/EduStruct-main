@@ -107,7 +107,8 @@ const ManageSchools = () => {
 
 const deleteSchool = async () => {
     try {
-      const res = await axios.delete(`http://localhost:8000/api/school/delete/${selectedSchool._id}`);
+      const res = await axios.delete(`${import.meta.env.VITE_API_URL}/api/school/delete/${selectedSchool._id}`
+);
       if (res.data.success) {
         const updatedSchools = allSchools.filter(sch => sch._id !== selectedSchool._id);
   

@@ -9,7 +9,7 @@ const getAllSchoolByUser = () => {
     useEffect(()=>{
         const fetchAllSchoolByUser = async () => {
             try {
-                const res = await axios.get(`http://localhost:8000/api/school/my`,{withCredentials:true});
+                const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/school/my`,{withCredentials:true});
                 if(res.data.success){
                     dispatch(setSchools(res.data.school));
                 }

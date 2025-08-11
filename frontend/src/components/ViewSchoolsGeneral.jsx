@@ -25,7 +25,7 @@ const ViewSchoolsGeneral = () => {
   const fetchAndSetReviews = async (schoolId) => {
     try {
       const res = await axios.get(
-        `http://localhost:8000/api/review/${schoolId}`,
+        `${import.meta.env.VITE_API_URL}/api/review/${schoolId}`,
         { withCredentials: true }
       );
 
@@ -43,7 +43,7 @@ const ViewSchoolsGeneral = () => {
   const handleReviewSubmit = async (schoolId) => {
     try {
       const res = await axios.post(
-        `http://localhost:8000/api/review/create`,
+        `${import.meta.env.VITE_API_URL}/api/review/create`,
         {
             userId: user._id,
           schoolId,

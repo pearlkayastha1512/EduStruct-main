@@ -9,7 +9,7 @@ const getAllUsers = () => {
     useEffect(()=>{
         const fetchAllUsers = async () => {
             try {
-                const res = await axios.get(`http://localhost:8000/api/user/getAllUsers`,{withCredentials:true});
+                const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/user/getAllUsers`,{withCredentials:true});
                 if(res.data.success){
                     dispatch(setAllUsers(res.data.users));
                 }
