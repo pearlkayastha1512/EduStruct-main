@@ -75,8 +75,9 @@ Helps in budget allocation and priority planning.
 ✅ Built as a team project with focus on real-world implementation
 
 ✅ Successfully generated automated PDF reports
+<img width="1439" height="790" alt="Screenshot 2025-08-18 at 11 42 52 AM" src="https://github.com/user-attachments/assets/a84a7493-69fd-4beb-8ae5-88467b44fb27" />
 <img width="1439" height="790" alt="Screenshot 2025-08-18 at 11 44 15 AM" src="https://github.com/user-attachments/assets/6acecf5c-ac49-4af2-9a8c-35d8b15c3e46" />
 <img width="1439" height="790" alt="Screenshot 2025-08-18 at 11 44 02 AM" src="https://github.com/user-attachments/assets/2f0e91f1-83d6-4f16-9c4d-8786fa7a939a" />
 <img width="1439" height="790" alt="Screenshot 2025-08-18 at 11 43 12 AM" src="https://github.com/user-attachments/assets/06133498-6cfa-41a5-bb20-9e1ecc318660" />
 <img width="1439" height="790" alt="Screenshot 2025-08-18 at 11 43 02 AM" src="https://github.com/user-attachments/assets/a9a4b872-d017-4a56-b2bd-a1a53461c977" />
-<img width="1439" height="790" alt="Screenshot 2025-08-18 at 11 42 52 AM" src="https://github.com/user-attachments/assets/a84a7493-69fd-4beb-8ae5-88467b44fb27" />
+
